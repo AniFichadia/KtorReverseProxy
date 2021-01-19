@@ -12,6 +12,13 @@ repositories {
 }
 
 dependencies {
+    // https://ktor.io/
+    val ktorVersion = "1.5.0"
+
+    implementation("io.ktor:ktor-server-core:$ktorVersion")
+    implementation("io.ktor:ktor-client-core:$ktorVersion")
+    implementation("io.ktor:ktor-client-cio:$ktorVersion")
+
     testImplementation(kotlin("test-junit"))
 }
 
